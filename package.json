@@ -1,0 +1,44 @@
+{
+  "name": "server-side-rendering-with-create-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.459.0",
+    "axios": "^0.18.0",
+    "axios-mock-adapter": "^1.15.0",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^3.3.7",
+    "dotenv": "^6.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "https": "^1.0.0",
+    "jest-cli": "^23.1.0",
+    "lodash": "^4.17.10",
+    "react": "^16.1.1",
+    "react-audio-recorder": "^2.2.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.1.1",
+    "react-mic": "^12.4.1",
+    "react-rating": "^1.3.0",
+    "react-recorder": "^1.0.0",
+    "react-scripts": "1.0.17",
+    "react-speech-recognition": "^2.0.1",
+    "react-test-renderer": "^16.4.1",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "sanitize-html": "^1.18.2",
+    "sinon": "^6.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:ssr": "node ./server/",
+    "build": "react-scripts build && npm run ssr",
+    "ssr": "cross-env NODE_ENV=production webpack --config ./webpack.ssr.config.js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1",
+    "jsdom": "^11.11.0"
+  }
+}

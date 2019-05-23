@@ -1,0 +1,12 @@
+export const ACTION_WRONG = "Something went wrong while initiating the DAS.Please try again after sometime";
+export const ACTION_CONTEXT_MISSING = "Error while fetching the context";
+export const TIMER1_CLOCK = "900000";
+export const TIMER2_CLOCK = "600000";
+export const XAASAPI_TIMER = "1000";
+export const TIMER1_INTENT = "timer1";
+export const TIMER2_INTENT = "timer2";
+export const BOT_ID = "7c51115067";
+export const SPLITCHAR = "/n";
+export const FEEDBACK_SUCCESS_MSG = "Thanks you for your feedback.";
+export const RESPONSE_DELAY_MSG = "We are working on it.Please wait for sometime."
+export const XAASAPI_ERROR = "We are experiencing error.Please try again after some time."
